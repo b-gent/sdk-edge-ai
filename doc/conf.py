@@ -37,10 +37,8 @@ sys.path.insert(0, str(ZEPHYR_BASE / 'scripts'))
 project = 'nRF Connect SDK - Edge AI Add-on'
 copyright = '2026, Nordic Semiconductor'
 author = 'Nordic Semiconductor'
-
-# The full version, including alpha/beta/rc tags
-release = '2026'
-
+release = '2.1.0'
+version = '2.1.0'
 
 # -- General configuration ---------------------------------------------------
 
@@ -114,10 +112,17 @@ options_from_kconfig_zephyr_dir = ZEPHYR_BASE
 # a list of builtin themes.
 #
 html_theme = 'sphinx_ncs_theme'
+
 html_theme_options = {
     'docsets': {},
+    "ncs_url": "https://nrfconnectdocs.nordicsemi.com/ncs/latest/nrf/",
+    "ncs_label": "nRF Connect SDK Docs",
+    "addons_url": "https://nrfconnect.github.io/ncs-app-index/",
+    "bare_metal_url": "",
+    "logo_url": "https://docs.nordicsemi.com",
 }
 
+html_show_sphinx = False
 html_extra_path = ['versions.json']
 
 # Add any paths that contain custom static files (such as style sheets) here,
