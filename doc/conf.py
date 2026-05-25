@@ -20,10 +20,8 @@
 project = 'nRF Connect SDK - Edge AI Add-on'
 copyright = '2025, Nordic Semiconductor'
 author = 'Nordic Semiconductor'
-
-# The full version, including alpha/beta/rc tags
-release = '2025'
-
+release = '1.0.0'
+version = '1.0.0'
 
 # -- General configuration ---------------------------------------------------
 
@@ -50,6 +48,18 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 html_theme = 'sphinx_ncs_theme'
+
+html_theme_options = {
+    'docsets': {},
+    "ncs_url": "https://nrfconnectdocs.nordicsemi.com/ncs/latest/nrf/",
+    "ncs_label": "nRF Connect SDK Docs",
+    "addons_url": "https://nrfconnect.github.io/ncs-app-index/",
+    "bare_metal_url": "",
+    "logo_url": "https://docs.nordicsemi.com",
+}
+
+html_show_sphinx = False
+html_extra_path = ['versions.json']
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
